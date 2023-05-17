@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-body-page',
-  templateUrl: './body-page.component.html',
-  styleUrls: ['./body-page.component.css']
+  selector: 'app-new-pawn',
+  templateUrl: './new-pawn.component.html',
+  styleUrls: ['./new-pawn.component.css']
 })
-export class BodyPageComponent implements OnInit {
+export class NewPawnComponent implements OnInit {
 
   constructor() { }
 
