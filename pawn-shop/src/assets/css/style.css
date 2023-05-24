@@ -1,10 +1,3 @@
-/**
-* Template Name: Ninestars
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -73,7 +66,7 @@ h6,
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 
@@ -1569,12 +1562,12 @@ section {
 
 }
 
-@media {
-  .img-bg .img-bg-inner p {
-    align-items: center;
-    display: none;
-  }
-}
+/*@media {*/
+/*  .img-bg .img-bg-inner p {*/
+/*    align-items: center;*/
+/*    display: none;*/
+/*  }*/
+/*}*/
 
 
 .custom-swiper-button-next,
@@ -2254,7 +2247,7 @@ tbody td {
 
 .searchBox .button-search:hover {
   background: var(--nc-primary-bg);
-  opacity: 0.5s;
+  opacity: 0.5;
 }
 
 .form-search {
@@ -2701,4 +2694,125 @@ select.form-select option {
 .swal2-confirm:focus,
 .swal2-cancel:focus {
   box-shadow: 0 0 0 0.25rem rgba(238, 77, 45, .55);
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}
+.why-us .container {
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  background: #fff;
+}
+
+.why-us .icon-box+.icon-box {
+  margin-top: 50px;
+}
+
+.why-us .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #f3f8fa;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.why-us .icon-box .icon i {
+  color: #68A4C4;
+  font-size: 32px;
+}
+
+.why-us .icon-box:hover .icon {
+  background: #68A4C4;
+}
+
+.why-us .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.why-us .icon-box .title {
+  margin-left: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.why-us .icon-box .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.why-us .icon-box .title a:hover {
+  color: #eb5d1e;
+}
+
+.why-us .icon-box .description {
+  margin-left: 25px;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.why-us .video-box {
+  position: relative;
+}
+
+.why-us .video-box img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .row+.row {
+  margin-top: 100px;
+}
+
+.features h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  padding-bottom: 10px;
+}
+
+.features ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+
+.features p:last-child {
+  margin-bottom: 0;
 }
